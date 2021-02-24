@@ -1,0 +1,112 @@
+body{
+  background-color: #ffc8dd;
+  margin-bottom: 45px;
+}
+.title {
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  color: #9b5de5;
+  font-size: 6vw;
+}
+#container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.img-pet {
+  max-height: 300px;
+  max-width: 100%;
+  object-fit: contain;
+  border-radius: 5px;
+  display: block;
+  margin: 15px auto;
+}
+.img-container {
+  /* need height at 100% to display text */
+  height: 100%;
+  max-width: 800px;
+  min-width: 800px;
+  background-color: #f8edeb;
+  margin-bottom: 3%;
+  border-radius: 15px;
+}
+.text-div {
+  padding: 15px;
+  font-family: 'Hind', sans-serif;
+}
+.pet-title {
+  text-align: center;
+  font-size: 3vw;
+  margin: 0 auto;
+  color: #6c757d;
+}
+.pet-joined {
+  color: #b1a7a6;
+}
+.pet-description {
+  color: #6c757d;
+}
+.download-button-container {
+  text-align: center;
+  margin: 0 auto;
+}
+.download-button {
+  width: 30%;
+  background-color: #cdb4db;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+}
+.selected-img {
+  opacity: 0.5;
+  border: 2px solid #ffc8dd;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  background-color: #ffafcc;
+  text-align: center;
+}
+.all-imgs-button {
+  margin-top: 5px;
+  margin-right: 15px;
+  border-radius: 5px;
+  background-color: #9b5de5;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .img-container {
+    max-width: 700px;
+    min-width: 700px;
+  }
+}
+
+@media (max-width: 375px) {
+  .img-pet {
+    max-height: 200px;
+    max-width: 260px;
+  }
+  .img-container {
+    max-width: 300px;
+    min-width: 300px;
+  }
+  .download-button {
+    width: 100%;
+  }
+}
